@@ -33,6 +33,12 @@ WS.SERVICES = [
 
 WS.STATUSES = ["Scheduled", "In Progress", "Awaiting Feedback", "Terminated"];
 
+// Deliberate mix, dated around WS.TODAY (2026-07-10): w001-w005 are Awaiting
+// Feedback (past, results already logged); w006/w007 are past-dated but still
+// Scheduled/In Progress (no studentsCount) so they drive the "needs follow-up"
+// list; w009/w010 land on WS.TODAY itself to populate the In Progress state
+// and test same-day calendar stacking; w011-w017 are future/Scheduled; w003
+// and w018 are Terminated (one past, one future-canceled).
 WS.WORKSHOPS = [
   { id: "w001", service: "Intro to Robotics", school: "Lincoln Elementary", location: WS.SCHOOLS["Lincoln Elementary"], date: "2026-06-01", time: "09:00", classroom: "Room 12B", employeeIds: ["e1", "e3"], status: "Awaiting Feedback", studentsCount: 24 },
   { id: "w002", service: "Creative Coding", school: "Washington Middle School", location: WS.SCHOOLS["Washington Middle School"], date: "2026-06-03", time: "13:00", classroom: "Media Center", employeeIds: ["e2"], status: "Awaiting Feedback", studentsCount: 18 },
