@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Workshop — Playful Cards</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="new-workshop">
+<div class="hero">
+  <div class="hero-top">
+    <div class="wordmark"><span class="dot"></span> Workshop Manager</div>
+    <div class="hero-actions"><a href="../index.html">&larr; All styles</a></div>
+  </div>
+  <div class="hero-title">
+    <h1>New Workshop</h1>
+    <div class="hero-date" id="topbar-date"></div>
+  </div>
+</div>
+<div class="tabnav">
+  <div class="tabnav-inner">
+    <a href="index.html">&#127968; Home</a>
+    <a href="upcoming.html">&#128197; Upcoming</a>
+    <a href="new-workshop.html" class="active">&#10133; New Workshop</a>
+    <a href="my-workshops.html">&#128100; My Workshops</a>
+  </div>
+</div>
+<main class="page">
+  <div class="success-banner" id="success-banner" style="display:none"></div>
+
+  <form id="new-workshop-form">
+    <div class="form-card">
+      <div class="form-step-label"><span class="form-step-num">1</span> What &amp; Where</div>
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="field-service">Service</label>
+          <select id="field-service" required></select>
+        </div>
+        <div class="form-field">
+          <label for="field-school">School</label>
+          <select id="field-school" required></select>
+        </div>
+        <div class="form-field full">
+          <label for="field-location">Location</label>
+          <input id="field-location" type="text" required>
+        </div>
+        <div class="form-field">
+          <label for="field-classroom">Classroom</label>
+          <input id="field-classroom" type="text" placeholder="e.g. Room 12B" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-step-label"><span class="form-step-num">2</span> When</div>
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="field-date">Date</label>
+          <input id="field-date" type="date" required>
+        </div>
+        <div class="form-field">
+          <label for="field-time">Time</label>
+          <input id="field-time" type="time" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-step-label"><span class="form-step-num">3</span> Who</div>
+      <div class="checkbox-list" id="employee-checkboxes"></div>
+    </div>
+
+    <button type="submit" class="btn">Create workshop</button>
+  </form>
+</main>
+<script src="../shared/data.js"></script>
+<script src="../shared/helpers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

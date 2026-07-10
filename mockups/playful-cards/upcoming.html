@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upcoming Workshops — Playful Cards</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="upcoming">
+<div class="hero">
+  <div class="hero-top">
+    <div class="wordmark"><span class="dot"></span> Workshop Manager</div>
+    <div class="hero-actions"><a href="../index.html">&larr; All styles</a></div>
+  </div>
+  <div class="hero-title">
+    <h1>Upcoming Workshops</h1>
+    <div class="hero-date" id="topbar-date"></div>
+  </div>
+</div>
+<div class="tabnav">
+  <div class="tabnav-inner">
+    <a href="index.html">&#127968; Home</a>
+    <a href="upcoming.html" class="active">&#128197; Upcoming</a>
+    <a href="new-workshop.html">&#10133; New Workshop</a>
+    <a href="my-workshops.html">&#128100; My Workshops</a>
+  </div>
+</div>
+<main class="page">
+  <div class="view-toggle">
+    <button id="toggle-list">List</button>
+    <button id="toggle-calendar">Calendar</button>
+  </div>
+  <div id="list-view"></div>
+  <div id="calendar-view"></div>
+</main>
+<script src="../shared/data.js"></script>
+<script src="../shared/helpers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

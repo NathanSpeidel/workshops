@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workshop Manager — Style Options</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f4f8f4;
+    color: #16241a;
+  }
+  header {
+    background: #4cbb17;
+    color: #fff;
+    padding: 40px 24px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 14px;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  .note {
+    background: #fff;
+    border: 1px solid #dbe6db;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 13px;
+    color: #5b6b60;
+    margin-bottom: 32px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #dbe6db;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .card .tag {
+    display: inline-block;
+    background: #eaf7e4;
+    color: #3da114;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 3px 9px;
+    border-radius: 100px;
+    width: fit-content;
+  }
+  .card p {
+    margin: 0;
+    font-size: 13.5px;
+    color: #5b6b60;
+    line-height: 1.5;
+    flex: 1;
+  }
+  .card a.enter {
+    display: block;
+    text-align: center;
+    background: #4cbb17;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .card a.enter:hover {
+    background: #3da114;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Workshop Manager — Style Options</h1>
+  <p>Same mock data, three different looks. Click into each one and compare.</p>
+</header>
+<main>
+  <div class="note">
+    These are click-through mockups with mock data only — nothing is saved permanently. Forms will let you submit a new workshop or log results for a workshop; changes only persist for your current browser tab (via sessionStorage) so the demo feels alive without a real backend. Each variant has a "Reset demo data" option to clear anything you've added.
+  </div>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">Variant A</span>
+      <h2>Command Center</h2>
+      <p>A dense admin dashboard: fixed green sidebar nav, compact tables, status pill badges, and a small dot-indicator month calendar. Built for speed and information density.</p>
+      <a class="enter" href="command-center/index.html">Explore Command Center</a>
+    </div>
+    <div class="card">
+      <span class="tag">Variant B</span>
+      <h2>Field Notebook</h2>
+      <p>A spacious, editorial, list-first layout: no sidebar, centered column, serif headings, and generous whitespace. Workshops read like entries in a field notebook.</p>
+      <a class="enter" href="field-notebook/index.html">Explore Field Notebook</a>
+    </div>
+    <div class="card">
+      <span class="tag">Variant C</span>
+      <h2>Playful Cards</h2>
+      <p>A bright, app-like experience: rounded cards, a kelly-green hero header, and a Google-Calendar-style month grid full of colorful event chips.</p>
+      <a class="enter" href="playful-cards/index.html">Explore Playful Cards</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

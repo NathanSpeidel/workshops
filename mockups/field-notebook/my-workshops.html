@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Workshops — Field Notebook</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="my-workshops">
+<header class="topnav">
+  <div class="wordmark">Workshop Manager</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="upcoming.html">Upcoming</a>
+    <a href="new-workshop.html">New Workshop</a>
+    <a href="my-workshops.html" class="active">My Workshops</a>
+  </nav>
+</header>
+<main class="page">
+  <div class="page-head">
+    <h1>My Workshops</h1>
+    <p class="date-line" id="topbar-date"></p>
+  </div>
+
+  <div class="form-field" style="max-width:320px">
+    <label for="employee-filter">Viewing as</label>
+    <select id="employee-filter"></select>
+  </div>
+
+  <div id="my-workshops-list"></div>
+</main>
+<footer class="site-footer">
+  <a href="../index.html">&larr; All styles</a>
+  <button id="reset-demo">Reset demo data</button>
+</footer>
+<script src="../shared/data.js"></script>
+<script src="../shared/helpers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

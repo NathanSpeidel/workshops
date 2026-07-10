@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Workshops — Command Center</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="my-workshops">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">&#9679;</span> Workshop Manager</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="upcoming.html" class="nav-link">Upcoming</a>
+      <a href="new-workshop.html" class="nav-link">New Workshop</a>
+      <a href="my-workshops.html" class="nav-link active">My Workshops</a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="../index.html">&larr; All styles</a>
+      <button id="reset-demo">Reset demo data</button>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <h1>My Workshops</h1>
+      <div class="topbar-date" id="topbar-date"></div>
+    </header>
+    <div class="content">
+      <div class="form-field" style="max-width:320px">
+        <label for="employee-filter">Viewing as</label>
+        <select id="employee-filter"></select>
+      </div>
+      <div class="card" id="my-workshops-list"></div>
+    </div>
+  </main>
+</div>
+<script src="../shared/data.js"></script>
+<script src="../shared/helpers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

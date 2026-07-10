@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workshop Manager — Command Center</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">&#9679;</span> Workshop Manager</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="upcoming.html" class="nav-link">Upcoming</a>
+      <a href="new-workshop.html" class="nav-link">New Workshop</a>
+      <a href="my-workshops.html" class="nav-link">My Workshops</a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="../index.html">&larr; All styles</a>
+      <button id="reset-demo">Reset demo data</button>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <h1>Dashboard</h1>
+      <div class="topbar-date" id="topbar-date"></div>
+    </header>
+    <div class="content">
+      <div class="stat-grid">
+        <div class="stat-tile"><div class="num" id="stat-upcoming">–</div><div class="label">Upcoming</div></div>
+        <div class="stat-tile"><div class="num" id="stat-in-progress">–</div><div class="label">In Progress</div></div>
+        <div class="stat-tile"><div class="num" id="stat-awaiting">–</div><div class="label">Awaiting Feedback</div></div>
+        <div class="stat-tile"><div class="num" id="stat-followup">–</div><div class="label">Needs Follow-up</div></div>
+      </div>
+
+      <div class="card">
+        <h2>Needs Follow-up</h2>
+        <div id="followup-list"></div>
+      </div>
+
+      <div class="card">
+        <h2>Next Up</h2>
+        <div id="next-up-list"></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../shared/data.js"></script>
+<script src="../shared/helpers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

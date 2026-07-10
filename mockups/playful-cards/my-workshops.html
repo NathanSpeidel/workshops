@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Workshops — Playful Cards</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="my-workshops">
+<div class="hero">
+  <div class="hero-top">
+    <div class="wordmark"><span class="dot"></span> Workshop Manager</div>
+    <div class="hero-actions"><a href="../index.html">&larr; All styles</a></div>
+  </div>
+  <div class="hero-title">
+    <h1>My Workshops</h1>
+    <div class="hero-date" id="topbar-date"></div>
+  </div>
+</div>
+<div class="tabnav">
+  <div class="tabnav-inner">
+    <a href="index.html">&#127968; Home</a>
+    <a href="upcoming.html">&#128197; Upcoming</a>
+    <a href="new-workshop.html">&#10133; New Workshop</a>
+    <a href="my-workshops.html" class="active">&#128100; My Workshops</a>
+  </div>
+</div>
+<main class="page">
+  <div class="form-field" style="max-width:320px">
+    <label for="employee-filter">Viewing as</label>
+    <select id="employee-filter"></select>
+  </div>
+  <div id="my-workshops-list"></div>
+</main>
+<script src="../shared/data.js"></script>
+<script src="../shared/helpers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

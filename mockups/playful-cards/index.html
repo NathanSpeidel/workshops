@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workshop Manager — Playful Cards</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+<div class="hero">
+  <div class="hero-top">
+    <div class="wordmark"><span class="dot"></span> Workshop Manager</div>
+    <div class="hero-actions"><a href="../index.html">&larr; All styles</a></div>
+  </div>
+  <div class="hero-title">
+    <h1>Hey there &#128075;</h1>
+    <div class="hero-date" id="topbar-date"></div>
+  </div>
+</div>
+<div class="tabnav">
+  <div class="tabnav-inner">
+    <a href="index.html" class="active">&#127968; Home</a>
+    <a href="upcoming.html">&#128197; Upcoming</a>
+    <a href="new-workshop.html">&#10133; New Workshop</a>
+    <a href="my-workshops.html">&#128100; My Workshops</a>
+  </div>
+</div>
+<main class="page">
+  <section>
+    <h2>Overview</h2>
+    <div class="stat-grid" id="stat-grid"></div>
+  </section>
+
+  <section>
+    <h2>&#9888;&#65039; Needs Follow-up</h2>
+    <div id="followup-list"></div>
+  </section>
+
+  <section>
+    <h2>&#10024; Next Up</h2>
+    <div id="next-up-list"></div>
+  </section>
+
+  <section style="text-align:center; margin-top:40px">
+    <button id="reset-demo" class="btn" style="background:var(--white); color:var(--green-dark); box-shadow:var(--shadow)">Reset demo data</button>
+  </section>
+</main>
+<script src="../shared/data.js"></script>
+<script src="../shared/helpers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
